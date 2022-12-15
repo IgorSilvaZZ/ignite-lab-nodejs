@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { IsNotEmpty, IsUUID, Length } from 'class-validator';
 
-export class CreateNotificationBody {
+export class CreateNotificationDTO {
   @IsNotEmpty()
   @IsUUID()
   recipientId: string;
